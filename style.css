@@ -2205,3 +2205,753 @@ footer p {
         display: none;
     }
 }
+
+/* =========================================================
+   KIDICO ENGLISH - GELİŞMİŞ MOBİL UYUMLULUK
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* -----------------------------------------------------
+       GENEL
+    ----------------------------------------------------- */
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+
+    /* -----------------------------------------------------
+       NAVBAR
+    ----------------------------------------------------- */
+
+    .navbar {
+        height: 68px;
+        padding: 0 14px;
+        gap: 8px;
+    }
+
+    .logo {
+        font-size: 22px;
+        gap: 5px;
+        min-width: 0;
+        flex-shrink: 1;
+    }
+
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo span {
+        white-space: nowrap;
+    }
+
+    .nav-button {
+        flex-shrink: 0;
+        padding: 9px 12px;
+        font-size: 9px;
+        white-space: nowrap;
+    }
+
+
+    /* -----------------------------------------------------
+       HERO
+    ----------------------------------------------------- */
+
+    .hero {
+        width: 100%;
+        padding: 55px 20px 70px;
+    }
+
+    .hero-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    .hero-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-small {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .hero h1 {
+        font-size: clamp(40px, 12vw, 52px);
+        line-height: .95;
+        word-break: normal;
+    }
+
+    .hero-left p {
+        width: 100%;
+        max-width: 500px;
+        margin: 22px auto 0;
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .hero-button {
+        max-width: 100%;
+        padding: 14px 22px;
+    }
+
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-photo {
+        width: min(78vw, 320px);
+        height: min(78vw, 320px);
+        padding: 8px;
+    }
+
+    .hero-doodle {
+        right: 3%;
+        top: 0;
+        font-size: 40px;
+    }
+
+    .hero-dots {
+        right: 0;
+        bottom: 5px;
+        font-size: 20px;
+    }
+
+
+    /* -----------------------------------------------------
+       HERO DEKORASYONLARI
+    ----------------------------------------------------- */
+
+    .yellow-circle {
+        width: 100px;
+        height: 100px;
+        top: -50px;
+        left: -35px;
+    }
+
+    .orange-dot {
+        width: 22px;
+        height: 22px;
+        left: auto;
+        right: 12%;
+        top: 100px;
+    }
+
+    .pink-star {
+        left: 5%;
+        bottom: 30px;
+        font-size: 35px;
+    }
+
+
+    /* -----------------------------------------------------
+       BİZ KİMİZ
+    ----------------------------------------------------- */
+
+    .about {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+    }
+
+    .about-left {
+        width: 100%;
+        padding: 60px 20px 55px;
+    }
+
+    .about-title {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .about-orange {
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+    }
+
+    .about-title h2 {
+        font-size: clamp(40px, 12vw, 52px);
+    }
+
+    .about-left > p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.65;
+        text-align: center;
+    }
+
+    .scribble {
+        font-size: 55px;
+        left: 5px;
+        top: 15px;
+    }
+
+    .about-star {
+        right: 10px;
+        top: 65px;
+        font-size: 40px;
+    }
+
+
+    /* -----------------------------------------------------
+       DEĞERLER
+    ----------------------------------------------------- */
+
+    .values {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 28px;
+        padding: 18px;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        border-radius: 24px;
+    }
+
+    .value {
+        font-size: 15px;
+    }
+
+    .value-icon {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+        font-size: 23px;
+    }
+
+    .bottom-leaf {
+        font-size: 50px;
+    }
+
+
+    /* -----------------------------------------------------
+       ABOUT SAĞ PANEL
+    ----------------------------------------------------- */
+
+    .about-right {
+        width: 100%;
+        padding: 50px 20px 60px;
+        border-radius: 0;
+    }
+
+    .about-right h2 {
+        font-size: clamp(36px, 11vw, 45px);
+    }
+
+    .about-photo {
+        width: 100%;
+        max-width: 100%;
+        height: 220px;
+        margin-bottom: 20px;
+        border-radius: 25px;
+    }
+
+    .about-right > p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .top-star {
+        top: 60px;
+        left: 5%;
+        font-size: 28px;
+    }
+
+    .bottom-star {
+        bottom: 25px;
+        right: 6%;
+        font-size: 32px;
+    }
+
+
+    /* -----------------------------------------------------
+       GENEL SECTION BAŞLIKLARI
+    ----------------------------------------------------- */
+
+    .section-heading {
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .section-heading span {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .section-heading h2 {
+        font-size: clamp(32px, 10vw, 42px);
+        line-height: 1.05;
+    }
+
+
+    /* -----------------------------------------------------
+       SÜREÇ
+    ----------------------------------------------------- */
+
+    .process {
+        width: 100%;
+        padding: 70px 18px;
+    }
+
+    .process-wrapper {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .process-card {
+        width: 100%;
+        min-height: 0;
+        padding: 25px 20px;
+        transform: none;
+    }
+
+    .card-icon {
+        font-size: 30px;
+    }
+
+    .process-card h3 {
+        font-size: 17px;
+    }
+
+    .process-card p {
+        font-size: 14px;
+        line-height: 1.55;
+    }
+
+    .process-wrapper::before,
+    .process-wrapper::after {
+        display: none;
+    }
+
+
+    /* -----------------------------------------------------
+       MÜFREDAT
+    ----------------------------------------------------- */
+
+    .curriculum {
+        width: 100%;
+        padding: 70px 18px;
+    }
+
+    .curriculum-header {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .curriculum-header span {
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .curriculum-header h2 {
+        font-size: clamp(35px, 10vw, 45px);
+        line-height: 1.05;
+    }
+
+    .curriculum-content {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .curriculum-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .curriculum-text h3 {
+        font-size: 36px;
+    }
+
+    .curriculum-text p {
+        font-size: 15px;
+        line-height: 1.65;
+    }
+
+    .age-list {
+        width: 100%;
+        gap: 14px;
+    }
+
+    .age-box {
+        width: 100%;
+        padding: 17px 18px;
+        border-radius: 22px;
+    }
+
+    .age-box h3 {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .age-box p {
+        font-size: 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       EĞİTMENLER
+    ----------------------------------------------------- */
+
+    .teachers {
+        width: 100%;
+        padding: 70px 18px;
+    }
+
+    .teacher-content {
+        width: 100%;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .teacher-box {
+        width: 100%;
+        padding: 28px 20px;
+        transform: none;
+        border-radius: 28px;
+    }
+
+    .teacher-icon {
+        font-size: 45px;
+    }
+
+    .teacher-box h3 {
+        font-size: 19px;
+    }
+
+    .teacher-box p {
+        font-size: 14px;
+    }
+
+
+    /* -----------------------------------------------------
+       YAZ DÖNEMİ
+    ----------------------------------------------------- */
+
+    .summer {
+        width: 100%;
+        padding: 70px 18px;
+    }
+
+    .summer-inner {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 18px;
+        border-radius: 28px;
+    }
+
+    .summer-inner > span {
+        font-size: 18px;
+    }
+
+    .summer-inner h2 {
+        font-size: clamp(34px, 10vw, 42px);
+        line-height: 1;
+    }
+
+    .summer-inner > p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .train {
+        font-size: 50px;
+    }
+
+
+    /* -----------------------------------------------------
+       DENEME FORMU
+    ----------------------------------------------------- */
+
+    #trialForm {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    #trialForm input,
+    #trialForm select {
+        width: 100%;
+        height: 50px;
+        min-width: 0;
+        font-size: 16px;
+        padding: 0 17px;
+    }
+
+    #trialForm button {
+        width: 100%;
+        height: 52px;
+        font-size: 15px;
+    }
+
+
+    /* -----------------------------------------------------
+       BAŞLANGIÇ
+    ----------------------------------------------------- */
+
+    .start {
+        width: 100%;
+        padding: 70px 18px;
+    }
+
+    .start-box {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 20px;
+        border-radius: 30px;
+    }
+
+    .start-left {
+        width: 100%;
+        text-align: center;
+    }
+
+    .start-left h2 {
+        font-size: clamp(36px, 11vw, 46px);
+        line-height: 1;
+    }
+
+    .start-left p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #startForm {
+        width: 100%;
+    }
+
+    #startForm input,
+    #startForm select {
+        width: 100%;
+        min-width: 0;
+        height: 48px;
+        font-size: 16px;
+    }
+
+    #startForm button {
+        width: 100%;
+        height: 50px;
+    }
+
+
+    /* -----------------------------------------------------
+       İLETİŞİM
+    ----------------------------------------------------- */
+
+    .contact {
+        width: 100%;
+        padding: 70px 18px 80px;
+    }
+
+    .contact-heading {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .contact-heading span {
+        font-size: 12px;
+        letter-spacing: 1.5px;
+    }
+
+    .contact-heading h2 {
+        font-size: clamp(34px, 10vw, 42px);
+        line-height: 1.05;
+    }
+
+    .contact-heading p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .contact-cards {
+        width: 100%;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .contact-card {
+        width: 100%;
+        min-width: 0;
+        min-height: 80px;
+        padding: 15px 16px;
+        gap: 13px;
+        border-radius: 20px;
+    }
+
+    .contact-icon {
+        width: 48px;
+        height: 48px;
+        min-width: 48px;
+        border-radius: 14px;
+    }
+
+    .contact-icon svg {
+        width: 26px;
+        height: 26px;
+    }
+
+    .whatsapp-icon svg {
+        width: 27px;
+        height: 27px;
+    }
+
+    .contact-info {
+        min-width: 0;
+        flex: 1;
+    }
+
+    .contact-info h3 {
+        font-size: 18px;
+    }
+
+    .contact-info p {
+        font-size: 13px;
+        line-height: 1.4;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+
+    /* -----------------------------------------------------
+       İLETİŞİM DEKORASYONLARI
+    ----------------------------------------------------- */
+
+    .contact-heading::before,
+    .contact-heading::after,
+    .contact-cards::before,
+    .contact-cards::after {
+        display: none;
+    }
+
+    .contact-decoration-1 {
+        width: 110px;
+        height: 110px;
+        left: -55px;
+    }
+
+    .contact-decoration-2 {
+        width: 130px;
+        height: 130px;
+        right: -65px;
+    }
+
+
+    /* -----------------------------------------------------
+       FOOTER
+    ----------------------------------------------------- */
+
+    footer {
+        width: 100%;
+        padding: 35px 18px;
+    }
+
+    footer strong {
+        font-size: 22px;
+    }
+
+    footer p {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+}
+
+
+/* =========================================================
+   ÇOK KÜÇÜK TELEFONLAR
+   360px ve altı
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .logo {
+        font-size: 19px;
+    }
+
+    .logo img {
+        width: 27px;
+        height: 27px;
+    }
+
+    .nav-button {
+        padding: 8px 9px;
+        font-size: 8px;
+    }
+
+    .hero {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-photo {
+        width: 275px;
+        height: 275px;
+    }
+
+    .about-left,
+    .about-right {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .process,
+    .curriculum,
+    .teachers,
+    .summer,
+    .start,
+    .contact {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .start-box {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
