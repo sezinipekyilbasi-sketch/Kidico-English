@@ -1,0 +1,2207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #fff8e9;
+    color: #2868c9;
+    font-family: "Nunito", sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    height: 76px;
+    padding: 0 6%;
+    background: #348ac4;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: white;
+    font-family: "Baloo 2";
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.logo img {
+    width: 34px;
+    height: 34px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.logo span {
+    margin-left: 0;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.nav-button {
+    background: #ffbd50;
+    color: #4b3827;
+
+    padding: 12px 20px;
+    border-radius: 30px;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 650px;
+
+    position: relative;
+    overflow: hidden;
+
+    background: #fff8e9;
+
+    padding: 80px 7%;
+}
+
+.hero-content {
+    max-width: 1250px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+    gap: 50px;
+}
+
+.hero-small {
+    color: #ed639b;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    margin-top: 15px;
+
+    font-family: "Baloo 2";
+    font-size: clamp(48px, 5vw, 75px);
+
+    line-height: .9;
+
+    color: #2862b9;
+}
+
+.hero h1 strong {
+    color: #285eb2;
+}
+
+.hero-left p {
+    margin-top: 25px;
+
+    max-width: 500px;
+
+    color: #b16f88;
+
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.hero-button {
+    display: inline-block;
+
+    margin-top: 28px;
+
+    background: #ffbb50;
+
+    color: #493525;
+
+    padding: 15px 28px;
+
+    border-radius: 30px;
+
+    font-weight: 800;
+
+    box-shadow: 0 8px 20px rgba(200,130,40,.15);
+}
+
+
+/* HERO FOTO */
+
+.hero-right {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-photo {
+    width: 460px;
+    height: 460px;
+
+    border-radius: 48% 52% 45% 55%;
+
+    padding: 10px;
+
+    background: #607de2;
+
+    transform: rotate(2deg);
+
+    box-shadow: 0 20px 45px rgba(40,70,150,.16);
+}
+
+.hero-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    border-radius: inherit;
+
+    transform: rotate(-2deg);
+}
+
+.hero-doodle {
+    position: absolute;
+
+    right: 5%;
+    top: 5%;
+
+    color: #ef6398;
+
+    font-size: 60px;
+}
+
+.hero-dots {
+    position: absolute;
+
+    right: -10px;
+    bottom: 20px;
+
+    color: #5e70cf;
+
+    font-size: 28px;
+
+    line-height: .8;
+
+    letter-spacing: 8px;
+}
+
+
+/* DEKORASYON */
+
+.yellow-circle {
+    position: absolute;
+
+    width: 160px;
+    height: 160px;
+
+    border-radius: 50%;
+
+    background: #ffe29c;
+
+    top: -80px;
+    left: -30px;
+}
+
+.pink-star {
+    position: absolute;
+
+    left: 5%;
+    bottom: 50px;
+
+    color: #ed6199;
+
+    font-size: 50px;
+}
+
+.orange-dot {
+    position: absolute;
+
+    left: 37%;
+    top: 120px;
+
+    width: 35px;
+    height: 35px;
+
+    border-radius: 50%;
+
+    background: #f18336;
+}
+
+
+/* =========================
+   BİZ KİMİZ
+========================= */
+
+.about {
+    max-width: 1450px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: 43% 57%;
+
+    min-height: 850px;
+
+    overflow: hidden;
+
+    background: #fff8e9; 
+}
+
+
+/* SOL TARAF */
+
+.about-left {
+    padding: 75px 60px 60px 9%;
+
+    position: relative;
+
+    background: #fff8e9;
+}
+
+.about-title {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+.about-orange {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: #f27835;
+}
+
+.about-title h2 {
+    font-family: "Baloo 2";
+
+    font-size: 67px;
+
+    line-height: .85;
+
+    color: #df478d;
+}
+
+.about-left > p {
+    max-width: 520px;
+
+    margin-top: 30px;
+
+    color: #2169cf;
+
+    font-size: 17px;
+
+    line-height: 1.65;
+}
+
+.scribble {
+    position: absolute;
+
+    top: 20px;
+    left: 10px;
+
+    color: #ec659c;
+
+    font-size: 90px;
+
+    transform: rotate(-15deg);
+}
+
+.about-star {
+    position: absolute;
+
+    right: 30px;
+    top: 90px;
+
+    color: #f5b53e;
+
+    font-size: 65px;
+}
+
+
+/* DEĞERLER */
+
+.values {
+    margin-top: 35px;
+
+    max-width: 580px;
+
+    padding: 25px;
+
+    background: #f9dce5;
+
+    border-radius: 30px;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 22px;
+}
+
+.value {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #2370d1;
+
+    font-size: 17px;
+
+    font-weight: 700;
+}
+
+.value-icon {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #fff;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 28px;
+}
+
+.value-icon.yellow {
+    color: #ffbd2e;
+}
+
+.value-icon.green {
+    color: #69bb78;
+}
+
+.value-icon.pink {
+    color: #ed6397;
+}
+
+.value-icon.purple {
+    color: #a75dca;
+}
+
+.bottom-leaf {
+    position: absolute;
+
+    bottom: -20px;
+    left: 20px;
+
+    font-size: 70px;
+}
+
+
+/* SAĞ MAVİ PANEL */
+
+.about-right {
+    margin: 0;
+
+    padding: 55px 8%;
+
+    background: #6f7db6;
+
+    color: white;
+
+    position: relative;
+
+    text-align: center;
+
+    border-radius: 45px 0 0 45px;
+}
+
+.about-right h2 {
+    font-family: "Baloo 2";
+
+    font-size: 62px;
+
+    line-height: .9;
+
+    color: white;
+
+    margin-bottom: 30px;
+}
+
+.about-photo {
+    width: 90%;
+
+    height: 310px;
+
+    margin: 0 auto 25px;
+
+    overflow: hidden;
+
+    border-radius: 35px;
+}
+
+.about-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.about-right > p {
+    max-width: 600px;
+
+    margin: 15px auto;
+
+    color: white;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+.top-star {
+    position: absolute;
+
+    top: 100px;
+    left: 10%;
+
+    font-size: 38px;
+
+    color: #ffd32f;
+}
+
+.bottom-star {
+    position: absolute;
+
+    bottom: 50px;
+    right: 10%;
+
+    font-size: 45px;
+
+    color: #f06c9e;
+}
+
+
+/* =========================
+   GENEL BAŞLIK
+========================= */
+
+.section-heading {
+    text-align: center;
+
+    margin-bottom: 45px;
+}
+
+.section-heading span {
+    color: #e8679b;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.section-heading h2 {
+    margin-top: 5px;
+
+    color: #275ca9;
+
+    font-family: "Baloo 2";
+
+    font-size: 52px;
+}
+
+
+/* =========================
+   SÜREÇ
+========================= */
+
+.process {
+    padding: 100px 7%;
+
+    background: #fffdf6;
+
+    position: relative;
+}
+
+.process-wrapper {
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+.process-card {
+    padding: 28px 15px;
+
+    min-height: 205px;
+
+    border-radius: 25px;
+
+    text-align: center;
+
+    transform: rotate(var(--rotation));
+}
+
+.pink-card {
+    background: #f5d4df;
+    --rotation: -1deg;
+}
+
+.yellow-card {
+    background: #fce6b4;
+    --rotation: 1deg;
+}
+
+.green-card {
+    background: #cdebe5;
+    --rotation: -1deg;
+}
+
+.orange-card {
+    background: #f8dfb1;
+    --rotation: 1deg;
+}
+
+.purple-card {
+    background: #e9d5e7;
+    --rotation: -1deg;
+}
+
+.card-icon {
+    font-size: 35px;
+
+    color: #3e4c71;
+
+    margin-bottom: 10px;
+}
+
+.process-card h3 {
+    color: #30486e;
+
+    font-size: 15px;
+}
+
+.process-card p {
+    margin-top: 12px;
+
+    color: #5f6170;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   MÜFREDAT
+========================= */
+
+.curriculum {
+    padding: 100px 7%;
+
+    background: #fff8e9;
+}
+
+.curriculum-header {
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.curriculum-header span {
+    color: #e76499;
+
+    font-weight: 800;
+
+    letter-spacing: 3px;
+}
+
+.curriculum-header h2 {
+    font-family: "Baloo 2";
+
+    font-size: 55px;
+
+    color: #2d62b1;
+}
+
+.curriculum-content {
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 35% 65%;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.curriculum-text h3 {
+    font-family: "Baloo 2";
+
+    font-size: 42px;
+
+    line-height: .95;
+
+    color: #e15b92;
+}
+
+.curriculum-text p {
+    margin-top: 20px;
+
+    color: #2870cf;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+.age-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+.age-box {
+    padding: 18px 25px;
+
+    border-radius: 28px;
+
+    border: 3px solid white;
+
+    box-shadow: 0 6px 15px rgba(0,0,0,.04);
+}
+
+.age-box h3 {
+    display: inline-block;
+
+    margin-right: 15px;
+
+    color: #4f6384;
+}
+
+.age-box strong {
+    color: #4e6383;
+}
+
+.age-box p {
+    margin-top: 5px;
+
+    color: #596271;
+
+    line-height: 1.5;
+}
+
+.baby {
+    background: #f8e8a9;
+}
+
+.child {
+    background: #dceaf7;
+}
+
+.school {
+    background: #f4dce7;
+}
+
+
+/* =========================
+   EĞİTMENLER
+========================= */
+
+.teachers {
+    padding: 100px 7%;
+
+    background: #fffdf6;
+}
+
+.teacher-content {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 25px;
+}
+
+.teacher-box {
+    padding: 35px;
+
+    text-align: center;
+
+    background: #f9e3d2;
+
+    border-radius: 35px;
+
+    transform: rotate(-1deg);
+}
+
+.teacher-box:nth-child(2) {
+    background: #dcebe5;
+
+    transform: rotate(1deg);
+}
+
+.teacher-box:nth-child(3) {
+    background: #e9d7e7;
+
+    transform: rotate(-1deg);
+}
+
+.teacher-icon {
+    font-size: 55px;
+
+    margin-bottom: 10px;
+}
+
+.teacher-box h3 {
+    color: #31558e;
+
+    font-size: 20px;
+}
+
+.teacher-box p {
+    margin-top: 10px;
+
+    color: #626773;
+
+    line-height: 1.6;
+}
+
+
+/* =========================
+   YAZ DÖNEMİ
+========================= */
+
+.summer {
+    padding: 100px 7%;
+
+    background: #fff8e9;
+}
+
+.summer-inner {
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 60px;
+
+    background: #fff0bd;
+
+    text-align: center;
+
+    border-radius: 35px;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+.summer-inner > span {
+    color: #31558f;
+
+    font-size: 22px;
+
+    font-weight: 800;
+}
+
+.summer-inner h2 {
+    margin-top: 8px;
+
+    font-family: "Baloo 2";
+
+    color: #6254ae;
+
+    font-size: 55px;
+
+    line-height: .9;
+}
+
+.summer-inner > p {
+    margin: 15px 0 30px;
+
+    color: #755f67;
+
+    font-weight: 700;
+}
+
+.train {
+    font-size: 65px;
+
+    margin-bottom: 5px;
+}
+
+.summer-decoration {
+    position: absolute;
+
+    font-size: 55px;
+}
+
+.sun {
+    color: #ef7b35;
+}
+
+.star {
+    color: #db6096;
+}
+
+#trialForm {
+    max-width: 850px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 12px;
+}
+
+#trialForm input,
+#trialForm select {
+    height: 50px;
+
+    border: 2px solid #ddd;
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 0 20px;
+
+    outline: none;
+}
+
+#trialForm button {
+    grid-column: span 2;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #ed7136;
+
+    color: white;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   BAŞLANGIÇ
+========================= */
+
+.start {
+    padding: 100px 7%;
+
+    background: #fffdf6;
+}
+
+.start-box {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 60px;
+
+    background: #ffd891;
+
+    border-radius: 40px;
+
+    display: grid;
+
+    grid-template-columns: 40% 60%;
+
+    gap: 50px;
+
+    align-items: center;
+}
+
+.start-left h2 {
+    font-family: "Baloo 2";
+
+    font-size: 58px;
+
+    line-height: .9;
+
+    color: #294d80;
+}
+
+.start-left p {
+    margin-top: 20px;
+
+    color: #62575a;
+
+    line-height: 1.6;
+}
+
+#startForm {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+#startForm input,
+#startForm select {
+    height: 48px;
+
+    border: 2px solid #bbb;
+
+    border-radius: 30px;
+
+    padding: 0 20px;
+
+    outline: none;
+}
+
+#startForm button {
+    height: 50px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: #078492;
+
+    color: white;
+
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    padding: 45px;
+
+    background: #819bd5;
+
+    color: white;
+
+    text-align: center;
+}
+
+footer strong {
+    font-family: "Baloo 2";
+
+    font-size: 25px;
+}
+
+footer p {
+    margin: 10px 0;
+
+    opacity: .9;
+}
+
+
+/* =========================
+   MOBİL
+========================= */
+
+@media(max-width:1000px) {
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+
+        text-align: center;
+    }
+
+    .hero-left p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-photo {
+        width: 380px;
+        height: 380px;
+    }
+
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+    .about-right {
+        border-radius: 0;
+    }
+
+    .process-wrapper {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .curriculum-content {
+        grid-template-columns: 1fr;
+    }
+
+    .teacher-content {
+        grid-template-columns: 1fr;
+    }
+
+    .start-box {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media(max-width:600px) {
+
+    .navbar {
+        padding: 0 15px;
+    }
+
+    .nav-button {
+        padding: 9px 12px;
+        font-size: 10px;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero-photo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-left {
+        padding: 60px 25px;
+    }
+
+    .about-title h2 {
+        font-size: 48px;
+    }
+
+    .about-right {
+        padding: 55px 20px;
+    }
+
+    .about-right h2 {
+        font-size: 43px;
+    }
+
+    .about-photo {
+        width: 100%;
+        height: 240px;
+    }
+
+    .values {
+        grid-template-columns: 1fr;
+    }
+
+    .process-wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading h2 {
+        font-size: 40px;
+    }
+
+    #trialForm {
+        grid-template-columns: 1fr;
+    }
+
+    #trialForm button {
+        grid-column: span 1;
+    }
+
+    .summer-inner {
+        padding: 40px 20px;
+    }
+
+    .summer-inner h2 {
+        font-size: 40px;
+    }
+
+    .start-box {
+        padding: 40px 25px;
+    }
+
+    .start-left h2 {
+        font-size: 45px;
+    }
+}
+
+/* =========================
+   SÜREÇ ARKA PLAN DESENLERİ
+========================= */
+
+.process {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Sol üst büyük pastel daire */
+.process::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 75%;
+    background: #f9dce5;
+    opacity: 0.45;
+    top: -70px;
+    left: -50px;
+}
+
+/* Sağ alt büyük pastel daire */
+.process::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 75%;
+    background: #dceaf7;
+    opacity: 0.5;
+    bottom: -100px;
+    right: -70px;
+}
+
+/* Kartların desenlerin üzerinde kalması */
+.process-wrapper,
+.process .section-heading {
+    position: relative;
+    z-index: 2;
+}
+
+/* Dekoratif küçük noktalar */
+.process-wrapper::before {
+    content: "• • •";
+    position: absolute;
+    left: -85px;
+    top: 20px;
+    color: #ef719e;
+    font-size: 25px;
+    letter-spacing: 8px;
+    transform: rotate(-15deg);
+    opacity: 0.7;
+}
+
+/* Dekoratif yıldız */
+.process-wrapper::after {
+    content: "✦";
+    position: absolute;
+    right: -70px;
+    bottom: -35px;
+    color: #f3b943;
+    font-size: 65px;
+    transform: rotate(15deg);
+    opacity: 0.65;
+}
+
+/* Küçük turuncu nokta */
+.process {
+    background-image:
+        radial-gradient(circle at 12% 72%, #f4a261 0 5px, transparent 6px),
+        radial-gradient(circle at 88% 18%, #ed639b 0 4px, transparent 5px),
+        radial-gradient(circle at 76% 82%, #7c91df 0 4px, transparent 5px);
+    background-color: #fffdf6;
+}
+
+/* =====================================================
+   KIDICO ENGLISH - GENEL SAYFA DEKORASYONLARI
+   Pastel / çocuk dostu / el çizimi görünüm
+===================================================== */
+
+/* Tüm bölümlerde dekorasyonların taşmasını kontrol et */
+.hero,
+.about,
+.process,
+.curriculum,
+.teachers,
+.summer,
+.start {
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: #f9dce5;
+    opacity: .45;
+    left: -70px;
+    bottom: 30px;
+}
+
+.hero::after {
+    content: "✦";
+    position: absolute;
+    color: #f3b943;
+    font-size: 70px;
+    right: 5%;
+    bottom: 40px;
+    transform: rotate(15deg);
+    opacity: .6;
+}
+
+
+/* =====================================================
+   BİZ KİMİZ
+===================================================== */
+
+.about::before {
+    content: "• • •";
+    position: absolute;
+    color: #ed639b;
+    font-size: 25px;
+    letter-spacing: 8px;
+    top: 45px;
+    left: 45%;
+    transform: rotate(-12deg);
+    opacity: .6;
+}
+
+.about::after {
+    content: "✦";
+    position: absolute;
+    color: #f4b943;
+    font-size: 60px;
+    right: 3%;
+    bottom: 40px;
+    transform: rotate(12deg);
+    opacity: .55;
+}
+
+
+/* =====================================================
+   SÜREÇ
+===================================================== */
+
+.process {
+    background-color: #fffdf6;
+
+    background-image:
+        radial-gradient(
+            circle at 12% 72%,
+            #f4a261 0 5px,
+            transparent 6px
+        ),
+        radial-gradient(
+            circle at 88% 18%,
+            #ed639b 0 4px,
+            transparent 5px
+        ),
+        radial-gradient(
+            circle at 76% 82%,
+            #7c91df 0 4px,
+            transparent 5px
+        );
+}
+
+.process::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #f9dce5;
+    opacity: .45;
+    top: -70px;
+    left: -50px;
+}
+
+.process::after {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: #dceaf7;
+    opacity: .5;
+    right: -80px;
+    bottom: -100px;
+}
+
+.process-wrapper,
+.process .section-heading {
+    position: relative;
+    z-index: 2;
+}
+
+.process-wrapper::before {
+    content: "• • •";
+    position: absolute;
+    left: -80px;
+    top: 20px;
+    color: #ef719e;
+    font-size: 25px;
+    letter-spacing: 8px;
+    transform: rotate(-15deg);
+    opacity: .7;
+}
+
+.process-wrapper::after {
+    content: "✦";
+    position: absolute;
+    right: -70px;
+    bottom: -35px;
+    color: #f3b943;
+    font-size: 65px;
+    transform: rotate(15deg);
+    opacity: .65;
+}
+
+
+/* =====================================================
+   MÜFREDAT
+===================================================== */
+
+.curriculum::before {
+    content: "";
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    background: #f8e8a9;
+    opacity: .38;
+    left: -100px;
+    top: 80px;
+}
+
+.curriculum::after {
+    content: "✦";
+    position: absolute;
+    color: #e76499;
+    font-size: 65px;
+    right: 5%;
+    top: 45px;
+    transform: rotate(-15deg);
+    opacity: .6;
+}
+
+.curriculum-content,
+.curriculum-header {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   EĞİTMENLER
+===================================================== */
+
+.teachers::before {
+    content: "✦";
+    position: absolute;
+    color: #f4b943;
+    font-size: 75px;
+    left: 5%;
+    top: 45px;
+    transform: rotate(-12deg);
+    opacity: .55;
+}
+
+.teachers::after {
+    content: "• • •";
+    position: absolute;
+    color: #75a8df;
+    font-size: 25px;
+    letter-spacing: 9px;
+    right: 5%;
+    bottom: 45px;
+    transform: rotate(12deg);
+    opacity: .65;
+}
+
+.teacher-content,
+.teachers .section-heading {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   YAZ DÖNEMİ
+===================================================== */
+
+.summer::before {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background: #dcebe5;
+    opacity: .45;
+    left: -80px;
+    bottom: 20px;
+}
+
+.summer::after {
+    content: "✦";
+    position: absolute;
+    color: #ed639b;
+    font-size: 70px;
+    right: 4%;
+    top: 45px;
+    transform: rotate(15deg);
+    opacity: .55;
+}
+
+.summer-inner {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   BAŞLANGIÇ
+===================================================== */
+
+.start::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: #e9d5e7;
+    opacity: .45;
+    right: -70px;
+    top: 40px;
+}
+
+.start::after {
+    content: "• • •";
+    position: absolute;
+    color: #ed7136;
+    font-size: 25px;
+    letter-spacing: 8px;
+    left: 5%;
+    bottom: 55px;
+    transform: rotate(-12deg);
+    opacity: .65;
+}
+
+.start-box {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =====================================================
+   EK KÜÇÜK DEKORASYONLAR
+===================================================== */
+
+/* Bölümlerin arasında çok hafif renk geçişleri */
+.process,
+.teachers {
+    background-color: #fff8e9;
+}
+
+.curriculum,
+.summer {
+    background-color: #fff8e9;
+}
+
+.start {
+    background-color: #fff8e9;
+}
+
+
+/* =====================================================
+   MOBİLDE DEKORASYONLARI KÜÇÜLT
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .hero::before,
+    .curriculum::before,
+    .summer::before,
+    .start::before,
+    .process::before,
+    .process::after {
+        transform: scale(.7);
+        opacity: .3;
+    }
+
+    .hero::after,
+    .about::after,
+    .curriculum::after,
+    .teachers::before,
+    .summer::after {
+        font-size: 45px;
+    }
+
+    .process-wrapper::before,
+    .process-wrapper::after {
+        display: none;
+    }
+}
+
+/* =====================================================
+   KIDICO ENGLISH - İLETİŞİM
+===================================================== */
+
+.contact {
+    position: relative;
+    overflow: hidden;
+    padding: 100px 7% 110px;
+    background:
+        linear-gradient(
+            to bottom,
+            #fff8e9 0%,
+            #fcecef 45%,
+            #e9eef8 100%
+        );
+    text-align: center;
+}
+
+
+/* -----------------------------------------------------
+   BAŞLIK
+----------------------------------------------------- */
+
+.contact-heading {
+    position: relative;
+    z-index: 3;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.contact-heading span {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #ed639b;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.contact-heading h2 {
+    margin: 0 0 15px;
+    color: #405a9d;
+    font-family: "Baloo 2", cursive;
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.contact-heading p {
+    margin: 0 auto;
+    max-width: 600px;
+    color: #53617d;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* -----------------------------------------------------
+   İLETİŞİM KARTLARI
+----------------------------------------------------- */
+
+.contact-cards {
+    position: relative;
+    z-index: 3;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    min-height: 105px;
+    padding: 24px 28px;
+
+    border-radius: 28px;
+
+    text-decoration: none;
+
+    background: rgba(255, 255, 255, 0.72);
+
+    border: 3px solid rgba(255, 255, 255, 0.8);
+
+    box-shadow:
+        0 12px 30px rgba(80, 100, 150, 0.10);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.contact-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 18px 35px rgba(80, 100, 150, 0.16);
+}
+
+
+/* -----------------------------------------------------
+   İKONLAR
+----------------------------------------------------- */
+
+.contact-icon {
+    flex-shrink: 0;
+
+    width: 62px;
+    height: 62px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 20px;
+
+    font-size: 29px;
+    font-weight: 700;
+
+    background: #dcebe5;
+    color: #4c8c78;
+}
+
+
+/* WhatsApp */
+
+.whatsapp-card .contact-icon {
+    background: #dcebe5;
+    color: #4c8c78;
+}
+
+
+/* Instagram */
+
+.instagram-icon {
+    background: #f8dce7;
+    color: #c45d88;
+}
+
+
+/* Mail */
+
+.mail-icon {
+    background: #dfe8f7;
+    color: #5c76b6;
+}
+
+
+/* -----------------------------------------------------
+   YAZILAR
+----------------------------------------------------- */
+
+.contact-info {
+    text-align: left;
+}
+
+.contact-info h3 {
+    margin: 0 0 5px;
+
+    color: #405a9d;
+
+    font-family: "Baloo 2", cursive;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.contact-info p {
+    margin: 0;
+
+    color: #59657d;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    word-break: break-word;
+}
+
+
+/* -----------------------------------------------------
+   DEKORATİF ŞEKİLLER
+----------------------------------------------------- */
+
+.contact-decoration {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+
+/* Sol pembe baloncuk */
+
+.contact-decoration-1 {
+    width: 180px;
+    height: 180px;
+
+    left: -70px;
+    top: 70px;
+
+    background: #f9dce5;
+    opacity: 0.55;
+}
+
+
+/* Sağ mavi baloncuk */
+
+.contact-decoration-2 {
+    width: 230px;
+    height: 230px;
+
+    right: -100px;
+    bottom: -90px;
+
+    background: #dce9f7;
+    opacity: 0.65;
+}
+
+
+/* Küçük yıldız */
+
+.contact-star {
+    position: absolute;
+
+    right: 10%;
+    top: 55px;
+
+    color: #f3b943;
+
+    font-size: 55px;
+
+    transform: rotate(15deg);
+
+    opacity: 0.65;
+
+    pointer-events: none;
+}
+
+
+/* -----------------------------------------------------
+   MOBİL
+----------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .contact-cards {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+    }
+
+    .contact-card {
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .contact {
+        padding: 75px 6% 85px;
+    }
+
+    .contact-heading h2 {
+        font-size: 40px;
+    }
+
+    .contact-heading p {
+        font-size: 15px;
+    }
+
+    .contact-card {
+        padding: 20px;
+    }
+
+    .contact-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+    }
+
+    .contact-info h3 {
+        font-size: 20px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .contact-decoration-1 {
+        width: 130px;
+        height: 130px;
+    }
+
+    .contact-decoration-2 {
+        width: 160px;
+        height: 160px;
+    }
+
+    .contact-star {
+        font-size: 40px;
+    }
+}
+
+/* =====================================================
+   İLETİŞİM İKONLARI - SVG
+===================================================== */
+
+.contact-icon svg {
+    width: 34px;
+    height: 34px;
+    display: block;
+    fill: currentColor;
+}
+
+
+/* WhatsApp */
+
+.whatsapp-icon {
+    background: #dceee5;
+    color: #4c9678;
+}
+
+.whatsapp-icon svg {
+    width: 35px;
+    height: 35px;
+}
+
+
+/* Instagram */
+
+.instagram-icon {
+    background: #f7dce8;
+    color: #c55f8c;
+}
+
+.instagram-icon svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* Mail */
+
+.mail-icon {
+    background: #dfe8f7;
+    color: #6079b7;
+}
+
+.mail-icon svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* Hafif hareket efekti */
+
+.contact-card:hover .contact-icon {
+    transform: rotate(-4deg) scale(1.08);
+}
+
+.contact-icon {
+    transition: transform 0.25s ease;
+}
+
+.contact-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+}
+
+.contact-icon svg {
+    width: 29px;
+    height: 29px;
+}
+
+.whatsapp-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* =====================================================
+   İLETİŞİM KARTLARINI KÜÇÜLT
+===================================================== */
+
+.contact-cards {
+    max-width: 1000px;
+    gap: 20px;
+}
+
+.contact-card {
+    min-height: 85px;
+    padding: 18px 22px;
+    border-radius: 24px;
+}
+
+/* =====================================================
+   İLETİŞİM - RENKLİ DEKORASYONLAR
+===================================================== */
+
+/* Eski büyük dekoratif daireleri hafiflet */
+.contact-decoration-1 {
+    width: 150px;
+    height: 150px;
+    left: -55px;
+    top: 80px;
+    background: #f7cbdc;
+    opacity: 0.45;
+}
+
+.contact-decoration-2 {
+    width: 170px;
+    height: 170px;
+    right: -65px;
+    bottom: -65px;
+    background: #cddcf3;
+    opacity: 0.5;
+}
+
+
+/* -----------------------------------------------------
+   YENİ DEKORATİF ŞEKİLLER
+----------------------------------------------------- */
+
+/* Sarı yıldız */
+.contact::before {
+    content: "✦";
+    position: absolute;
+    left: 9%;
+    top: 55px;
+
+    color: #f3b943;
+    font-size: 48px;
+
+    transform: rotate(-15deg);
+    opacity: 0.75;
+}
+
+
+/* Pembe küçük kalp */
+.contact::after {
+    content: "♥";
+    position: absolute;
+    right: 12%;
+    top: 105px;
+
+    color: #ed639b;
+    font-size: 32px;
+
+    transform: rotate(12deg);
+    opacity: 0.55;
+}
+
+
+/* -----------------------------------------------------
+   EK ŞEKİLLER
+----------------------------------------------------- */
+
+.contact-heading::before {
+    content: "• • •";
+    position: absolute;
+
+    left: -115px;
+    top: 45px;
+
+    color: #7da6d8;
+    font-size: 24px;
+    letter-spacing: 8px;
+
+    transform: rotate(-12deg);
+    opacity: 0.7;
+}
+
+
+.contact-heading::after {
+    content: "✧";
+    position: absolute;
+
+    right: -105px;
+    top: 20px;
+
+    color: #f39b62;
+    font-size: 48px;
+
+    transform: rotate(15deg);
+    opacity: 0.65;
+}
+
+
+/* -----------------------------------------------------
+   KÜÇÜK NOKTALAR
+----------------------------------------------------- */
+
+.contact-cards::before {
+    content: "";
+    position: absolute;
+
+    width: 13px;
+    height: 13px;
+
+    border-radius: 50%;
+
+    left: -45px;
+    bottom: 15px;
+
+    background: #f3b943;
+    opacity: 0.75;
+}
+
+
+.contact-cards::after {
+    content: "";
+    position: absolute;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+
+    right: -35px;
+    top: 20px;
+
+    background: #ed639b;
+    opacity: 0.7;
+}
+
+
+/* -----------------------------------------------------
+   İLETİŞİM KARTLARINA HAFİF RENK
+----------------------------------------------------- */
+
+.contact-card {
+    background:rgba(248, 232, 169, 0.7);;
+}
+
+
+/* Her kartın çok hafif farklı pastel tonu */
+
+.whatsapp-card {
+    box-shadow:
+        0 12px 30px rgba(76, 150, 120, 0.10);
+}
+
+.instagram-card {
+    box-shadow:
+        0 12px 30px rgba(197, 95, 140, 0.10);
+}
+
+.mail-card {
+    box-shadow:
+        0 12px 30px rgba(96, 121, 183, 0.10);
+}
+
+
+/* -----------------------------------------------------
+   MOBİL
+----------------------------------------------------- */
+
+@media (max-width: 600px) {
+
+    .contact::before {
+        left: 5%;
+        top: 40px;
+        font-size: 38px;
+    }
+
+    .contact::after {
+        right: 7%;
+        top: 80px;
+        font-size: 26px;
+    }
+
+    .contact-heading::before,
+    .contact-heading::after {
+        display: none;
+    }
+
+    .contact-cards::before {
+        display: none;
+    }
+
+    .contact-cards::after {
+        display: none;
+    }
+}
